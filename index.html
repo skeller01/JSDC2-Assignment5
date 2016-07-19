@@ -1,0 +1,34 @@
+<!-- Countly MVC
+
+The assignment is to make an MVC application used for counting things. Here are the specifications for the application:
+
+It should have three buttons (one for counting up, one for counting down, one for resetting to 0) ======   DONE - HAS FOUR FOR TESTING
+It will display the count to the user ===========DONE 
+If the count goes above 100, the color of the number will be red === DONE
+If the count goes below 0, the color of the number will be blue ==DONE --> 
+
+
+
+<!DOCTYPE html> 
+<html ng-app="myCounter" >
+<head>
+	<title>Assignment 5 - Steve Keller</title>
+	<!-- Connect to external style sheets -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body ng-controller="calcControl">
+	<!-- Read Out Section: display the count to the user  -->
+	<div class="countDisplay" ng-class = "{'blue':colorType===1,'red':colorType===2,'black':colorType===3}">{{counter}}</div>
+	<!-- Controls: 3 buttons, one for counting up, down and resetting to zeroo -->
+	<div class = "buttonHolder">
+		<button class = "add" type="button" ng-click="increment()">Add One!</button>
+		<button class = "subtract" type="button" ng-click="decrement()">Subtract One!</button>
+		<button class = "zero" type="button" ng-click="zeroOut()">Go Back to Zero!</button>
+		<button class = "zero" type="button" ng-click="hundredOut()">Go to One Hundred! (for testing purposes)</button>
+	</div>
+
+	<!-- Connect to external JS files  -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>

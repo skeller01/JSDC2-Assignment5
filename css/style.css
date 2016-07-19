@@ -1,0 +1,33 @@
+
+/*regular numbers*/
+.countDisplay {
+	border: 1px solid black;
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+	text-align: center;
+	font-size: 100px;
+}
+
+/*font color change*/
+.blue{
+	color:blue;
+}
+
+.red{
+	color:red;
+}
+
+.black{
+	color:black;
+}
+
+/*container for the buttons*/
+
+.buttonHolder {
+	border: 1px solid black;
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+	text-align: center;
+}
